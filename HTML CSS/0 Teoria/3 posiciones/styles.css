@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: black;
+}
+
+/* .padre{
+    background: rgb(225, 51, 51);
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.hijo{
+    background: rgb(103, 103, 238);
+    height: 300px;
+    width: 300px;
+} */
+
+.padre{
+    background: rgb(225, 51, 51);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 100px;
+}
+.hijo{
+    background: rgb(103, 103, 238);
+    height: 50px;
+    width: 50px;
+    left: 50px;
+    position: absolute;
+}

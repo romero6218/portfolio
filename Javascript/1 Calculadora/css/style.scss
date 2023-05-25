@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background: linear-gradient(45deg, #acb1e2, #faf7f7);
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.calculator{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(105, 159, 197);
+    background-color: white;
+    #display{
+        color: #000000;
+        margin: 0 10px;
+        height: 120px;
+        width: auto;
+        display: flex;
+        align-items: flex-end; 
+        justify-content: flex-end;
+        font-size: 40px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+    button#clear{
+        background-color: #98b5f8;
+        color: #5b8bf9;
+    }
+    button.btn-number{
+        background-color: #e0e0e0;
+        color: #000000;
+    }
+    .btn-operator{
+        background-color: #f8b195;
+        color: #f67280;
+    }
+    .btn-equal{
+        background-color: #f67280;
+        color: #f8b195;
+        height: 130px;
+
+    }
+    &.dark{
+        background-color: #333;
+        color: #ffffff;
+        box-shadow: 0 0 30px rgb(105, 159, 197);
+        #display{
+            color: #ffffff;
+        }
+        button#clear{
+            background-color: #fb5757;
+            color: #ffffff;
+        }
+        button.btn-number{
+            background-color: #8cbbed;
+            color: #ffffff;
+        }
+        .btn-operator{
+            background-color: #f386b5;
+            color: #ffffff;
+        }
+        .btn-equal{
+            background-color: #70d4ae;
+            color: #ffffff;
+        }
+    }
+} 
+.theme-toggler{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #ffffff;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: '';
+        height: 30px;
+        width: 30px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: #1d4dc5;
+        z-index: -1;
+    }
+
+}
+
+.theme-toggler.active{
+    color: #333;
+    &::before{
+        background-color: #f6edcf;
+    }
+}
+
+button{
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+

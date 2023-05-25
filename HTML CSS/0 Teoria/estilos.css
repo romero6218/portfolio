@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+h1 {
+  color: forestgreen;
+}
+
+p {
+  color: blue;
+}
+
+div {
+  color: red;
+}
+
+.test_div {
+  color: brown;
+}
+
+.li_test {
+  color: yellow;
+}
+
+.cuadro {
+  background: red;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.cuadro_hijo {
+  background: blue;
+  width: 50px;
+  height: 50px;
+}
+span {
+  color: green;
+}
